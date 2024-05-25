@@ -1,0 +1,14 @@
+{
+  "displayName": "Simple Localization System",
+  "name": "com.elmortem.localization",
+  "version": "1.0.0",
+  "unity": "2019.3",
+  "description": "Simple localization system with Google Sheet support.",
+  "keywords": [
+    "localization",
+    "localization system",
+    "locale",
+    "language"
+  ],
+  "category": "Utility"
+}
