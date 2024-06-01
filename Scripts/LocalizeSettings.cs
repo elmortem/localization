@@ -57,7 +57,7 @@ namespace Localization
 		private void OnValidate()
 		{
 			var localeAssetGuids = UnityEditor.AssetDatabase.FindAssets("t:LocaleAsset");
-			if (localeAssetGuids.Length == Locales.Length)
+			if (Locales != null && localeAssetGuids.Length == Locales.Length)
 				return;
 			
 			Locales = new LocaleItem[localeAssetGuids.Length];

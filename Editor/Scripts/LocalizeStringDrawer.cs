@@ -1,5 +1,8 @@
+using System;
 using UnityEditor;
+#if LOCALIZE_EXPERIMENTAL
 using UnityEditor.Experimental.GraphView;
+#endif
 using UnityEngine;
 
 namespace Localization.Editor
@@ -33,9 +36,15 @@ namespace Localization.Editor
 				_btnKeyIcon = EditorGUIUtility.IconContent("Icon Dropdown").image;
 			
 			var propertyHeight = EditorGUI.GetPropertyHeight(property, label, false);
-			var propertyRect = new Rect(position.x, position.y, position.width - propertyHeight, propertyHeight);
+#if LOCALIZE_EXPERIMENTAL
+			var propertyWidth = position.width - propertyHeight;
+#else
+			var propertyWidth = position.width;
+#endif
+			var propertyRect = new Rect(position.x, position.y, propertyWidth, propertyHeight);
 			EditorGUI.PropertyField(propertyRect, property, label, false);
 
+#if LOCALIZE_EXPERIMENTAL
 			var findRect = new Rect(position.x + position.width - propertyHeight, position.y, propertyHeight,
 				propertyHeight);
 			if (GUI.Button(findRect, _btnKeyIcon, _btnKeyStyle))
@@ -45,9 +54,10 @@ namespace Localization.Editor
 					searchProvider);
 				Event.current.Use();
 			}
+#endif
 
 			var languageRect = new Rect(position.x, position.y + propertyRect.height, 70f, _localizeBoxSize);
-			_language = (SystemLanguage)EditorGUI.EnumPopup(languageRect, _language);
+			_language = (SystemLanguage)EditorGUI.EnumPopup(languageRect, new GUIContent(""), _language, HasLanguage);
 			
 			if (EditorLocalizeSystem.TryGetValue(_language, property.stringValue, out var value))
 			{
@@ -82,6 +92,11 @@ namespace Localization.Editor
 			}
 
 			return EditorGUI.GetPropertyHeight(property, label, false) + _localizeBoxSize;
+		}
+
+		private bool HasLanguage(Enum language)
+		{
+			return Array.Exists(LocalizeSettings.MakeInstance().Locales, p => p.Language == (SystemLanguage)language);
 		}
 	}
 }

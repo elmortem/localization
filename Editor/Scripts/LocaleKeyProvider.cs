@@ -1,3 +1,4 @@
+#if LOCALIZE_EXPERIMENTAL
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
@@ -68,3 +69,4 @@ namespace Localization.Editor
 		}
 	}
 }
+#endif
