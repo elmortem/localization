@@ -47,7 +47,7 @@ namespace Localization
 		
 		public static LocalizeSettings MakeInstance()
 		{
-			var settingsList = Resources.FindObjectsOfTypeAll<LocalizeSettings>();
+			var settingsList = Resources.LoadAll<LocalizeSettings>("");
 			if (settingsList == null || settingsList.Length != 1)
 				throw new Exception($"LocalizationSettings is not found.");
 			return settingsList[0];
