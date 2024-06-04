@@ -9,8 +9,12 @@ Localization system with support Google Sheet support.
 
 Installation as a unity module via a git link in PackageManager or direct editing of `Packages/manifest' is supported.json:
 ```
-"com.elmortem.localization": "https://github.com/elmortem/localization.git",
+"com.elmortem.localization": "https://github.com/elmortem/localization.git?path=Packages/localization",
 ```
+
+## Google Sheet example
+
+```https://docs.google.com/spreadsheets/d/1q1MeK6qlmNKO2uf-yuRJlGW5EZZ0BJ15XO6Tu-8TjU0```
 
 ## Settings
 
@@ -35,10 +39,15 @@ var formattedText = TextKey.LocalizeFormat(arg0, arg1, arg2);
 ```
 
 ## Text Mesh Pro
-Add component LocalizeText at the same level as TMP_Text.
+Add component **LocalizeText** at the same level as TMP_Text to static localize text field.
+
+## Experimental feature
+Add define LOCALIZE_EXPERIMENTAL to apply experimental keys selector with search and groups.
 
 ## Pluralism
 In progress...
+
+### Other
 
 Support Unity 2019.3 or later.
 
