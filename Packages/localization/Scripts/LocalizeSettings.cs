@@ -72,8 +72,10 @@ namespace Localization
 
 			if (settingsList.Length > 1)
 			{
+#if UNITY_EDITOR
 				Debug.LogError("Need only one localization settings. See. " + string.Join(", ",
 					settingsList.Select(p => UnityEditor.AssetDatabase.GetAssetPath(p))));
+#endif
 			}
 			return settingsList[0];
 		}
