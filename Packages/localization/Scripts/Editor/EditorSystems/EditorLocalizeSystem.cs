@@ -4,7 +4,7 @@ using Core.LocalizeSystems.Utilities;
 using UnityEditor;
 using UnityEngine;
 
-namespace Localization.Editor
+namespace Localization.Editor.EditorSystems
 {
 	public static class EditorLocalizeSystem
 	{

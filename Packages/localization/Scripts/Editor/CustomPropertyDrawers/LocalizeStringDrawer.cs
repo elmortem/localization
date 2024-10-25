@@ -1,11 +1,12 @@
 using System;
+using Localization.Editor.EditorSystems;
 using UnityEditor;
+using UnityEngine;
 #if LOCALIZE_EXPERIMENTAL
 using UnityEditor.Experimental.GraphView;
 #endif
-using UnityEngine;
 
-namespace Localization.Editor
+namespace Localization.Editor.PropertyDrawers
 {
 	[CustomPropertyDrawer(typeof(LocalizeStringAttribute), false)]
 	public class LocalizeStringDrawer : PropertyDrawer
