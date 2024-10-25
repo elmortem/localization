@@ -42,12 +42,14 @@ var formattedText = TextKey.LocalizeFormat(arg0, arg1, arg2);
 Add component **LocalizeText** at the same level as TMP_Text to static localize text field.
 
 ## Toolbar menu
-The plugin contains commands for quick access to loading the localization table and opening the settings window on the toolbar **Tools/Localization/Download everything from Google Sheet** and **Tools/Localization/Settings** accordingly
+The plugin contains commands for quick access to loading the localization table and opening the settings window on the toolbar **Tools/Localization/Download everything from Google Sheet** and **Tools/Localization/Settings** accordingly.
+
 If for some reason you are not satisfied with the presence of the **Tools/Localization** menu in the Toolbar, you can disable it by setting the **Hide Toolbar Menu** flag to True in **ProjectSettings/Localization**
 
 ## Experimental feature
 Add define LOCALIZE_EXPERIMENTAL to apply experimental keys selector with search and groups.
-You can set Flag Used Experimental Api as True in ProjectSettings/Localization and system Automatically adds the required defines. 
+
+You can set Flag Used Experimental Api as True in ProjectSettings/Localization and system automatically adds the required defines. 
 
 ## Pluralism
 In progress...
