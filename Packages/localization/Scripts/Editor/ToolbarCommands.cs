@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#if !HIDE_TOOLBAR_MENU
+using System.Collections.Generic;
+using Localization.Editor.EditorSystems;
 using UnityEditor;
 
 namespace Localization.Editor
@@ -16,5 +18,12 @@ namespace Localization.Editor
 			}
 			EditorLocalizeSystem.LoadFromGoogleSheet(localeAssets);
 		}
+
+		[MenuItem("Tools/Localization/Settings")]
+		static void OpenProjectSettings()
+		{
+			SettingsService.OpenProjectSettings(EditorConstants.ProjectSettingsPath);
+		}
 	}
 }
+#endif

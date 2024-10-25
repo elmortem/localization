@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using Localization.Editor.EditorSystems;
 using UnityEditor;
 using UnityEngine;
 
-namespace Localization.Editor
+namespace Localization.Editor.CustomEditors
 {
 	[CustomEditor(typeof(LocalizeSettings))]
 	public class LocalizeSettingsEditor : UnityEditor.Editor
