@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-namespace Localization.Editor
+namespace Localization.Editor.EditorSystems
 {
 	public class LocaleKeyProvider : ScriptableObject, ISearchWindowProvider
 	{
@@ -14,10 +14,10 @@ namespace Localization.Editor
 
 		public List<SearchTreeEntry> CreateSearchTree(SearchWindowContext context) => _keyEntries;
 
-		public bool OnSelectEntry(SearchTreeEntry SearchTreeEntry, SearchWindowContext context)
+		public bool OnSelectEntry(SearchTreeEntry searchTreeEntry, SearchWindowContext context)
 		{
 			_property.serializedObject.UpdateIfRequiredOrScript();
-			_property.stringValue = (string)SearchTreeEntry.userData;
+			_property.stringValue = (string)searchTreeEntry.userData;
 			_property.serializedObject.ApplyModifiedProperties();
 			return true;
 		}
