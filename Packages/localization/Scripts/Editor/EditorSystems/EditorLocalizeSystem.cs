@@ -84,7 +84,7 @@ namespace Localization.Editor.EditorSystems
 
 			var groups = settings.Groups;
 			if (groups == null || groups.Length <= 0)
-				groups = new[] { new LocalizeSheet { Group = "Default", SheetId = "0" } };
+				groups = new[] { new LocalizeSheet { Group = "Default", SheetId = settings.DefaultSheetId } };
 
 			foreach (var groupItem in groups)
 			{

@@ -35,6 +35,7 @@ namespace Localization
 #if UNITY_EDITOR
 		[Header("Google Sheets")]
 		public string DocId;
+		public string DefaultSheetId = "0";
 		public LocalizeSheet[] Groups;
 		public int SkipLine = 1;
 		public int KeyColumn;
