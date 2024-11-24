@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 
 namespace Localization
@@ -19,6 +20,8 @@ namespace Localization
 		}
 
 		public SystemLanguage Language;
+		[ReadOnly]
+		public bool Pluralizme;
 		public int ValueColumn;
 		public List<LocaleItem> Items = new();
 	}

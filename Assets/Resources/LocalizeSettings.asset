@@ -15,10 +15,15 @@ MonoBehaviour:
   Locales:
   - Language: 10
     LocalePath: English
+  - Language: 14
+    LocalePath: French
+  - Language: 30
+    LocalePath: Russian
   - Language: 31
     LocalePath: Serbian
   DefaultLanguage: 10
   DocId: 1q1MeK6qlmNKO2uf-yuRJlGW5EZZ0BJ15XO6Tu-8TjU0
+  DefaultSheetId: 0
   Groups: []
   SkipLine: 1
   KeyColumn: 0

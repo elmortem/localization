@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: English
   m_EditorClassIdentifier: 
   Language: 10
+  Pluralizme: 1
   ValueColumn: 3
   Items:
   - Key: englishLng
@@ -23,6 +24,14 @@ MonoBehaviour:
     Group: Language
     Comment: 
     Value: Serbian
+  - Key: russianLng
+    Group: Language
+    Comment: 
+    Value: Russian
+  - Key: frenchLng
+    Group: Language
+    Comment: 
+    Value: French
   - Key: title
     Group: Default
     Comment: 
@@ -39,3 +48,99 @@ MonoBehaviour:
     Group: Color
     Comment: 
     Value: <color=blue>Blue</color>
+  - Key: pluralism
+    Group: Default
+    Comment: 
+    Value: Pluralism
+  - Key: price
+    Group: Pluralizm
+    Comment: 
+    Value: 'Price: {0} [0:crystal|crystals]'
+  - Key: case
+    Group: Default
+    Comment: 
+    Value: Cases
+  - Key: anna0
+    Group: Case
+    Comment: 
+    Value: Anna
+  - Key: anna1
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: anna2
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: anna3
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: anna4
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: anna5
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: anna6
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: text0
+    Group: Case
+    Comment: 
+    Value: '{0} came home'
+  - Key: text1
+    Group: Case
+    Comment: 
+    Value: '{0}''s car is new'
+  - Key: text2
+    Group: Case
+    Comment: 
+    Value: I called {0} yesterday
+  - Key: text3
+    Group: Case
+    Comment: 
+    Value: I met {0} in the park
+  - Key: text4
+    Group: Case
+    Comment: 
+    Value: I'm proud of {0}
+  - Key: text5
+    Group: Case
+    Comment: 
+    Value: We talked about {0}
+  - Key: text6
+    Group: Case
+    Comment: 
+    Value: Hello, {0}!
+  - Key: milica0
+    Group: Case
+    Comment: 
+    Value: Militsa
+  - Key: milica1
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: milica2
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: milica3
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: milica4
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: milica5
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: milica6
+    Group: Case
+    Comment: 
+    Value: 

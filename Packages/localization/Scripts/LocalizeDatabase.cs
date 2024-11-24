@@ -8,9 +8,11 @@ namespace Localization
 	{
 		private SystemLanguage _language = SystemLanguage.Unknown;
 		private readonly Dictionary<string, string> _values = new();
+		private bool _pluralizme;
 
 		public SystemLanguage Language => _language;
 		public IReadOnlyDictionary<string, string> Values => _values;
+		public bool Pluralizme => _pluralizme;
 
 		public bool Load(SystemLanguage language)
 		{
@@ -29,6 +31,7 @@ namespace Localization
 				_values[item.Key] = item.Value;
 			}
 			_language = locale.Language;
+			_pluralizme = locale.Pluralizme;
 			
 			return true;
 		}

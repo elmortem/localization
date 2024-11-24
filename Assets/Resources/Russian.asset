@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c094557abf5441589c8bce323ba8a2a2, type: 3}
+  m_Name: Russian
+  m_EditorClassIdentifier: 
+  Language: 30
+  Pluralizme: 1
+  ValueColumn: 5
+  Items:
+  - Key: englishLng
+    Group: Language
+    Comment: 
+    Value: "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439"
+  - Key: serbianLng
+    Group: Language
+    Comment: 
+    Value: "\u0421\u0435\u0440\u0431\u0441\u043A\u0438\u0439"
+  - Key: russianLng
+    Group: Language
+    Comment: 
+    Value: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+  - Key: frenchLng
+    Group: Language
+    Comment: 
+    Value: "\u0424\u0440\u0430\u043D\u0446\u0443\u0437\u0441\u043A\u0438\u0439"
+  - Key: title
+    Group: Default
+    Comment: 
+    Value: "\u0414\u0435\u043C\u043E\u043D\u0441\u0442\u0440\u0430\u0446\u0438\u044F
+      \u041B\u043E\u043A\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438"
+  - Key: red
+    Group: Color
+    Comment: 
+    Value: "<color=red>\u041A\u0440\u0430\u0441\u043D\u044B\u0439</color>"
+  - Key: green
+    Group: Color
+    Comment: 
+    Value: "<color=green>\u0417\u0435\u043B\u0451\u043D\u044B\u0439</color>"
+  - Key: blue
+    Group: Color
+    Comment: 
+    Value: "<color=blue>\u0421\u0438\u043D\u0438\u0439</color>"
+  - Key: pluralism
+    Group: Default
+    Comment: 
+    Value: "\u041F\u043B\u044E\u0440\u0430\u043B\u0438\u0437\u043C"
+  - Key: price
+    Group: Pluralizm
+    Comment: 
+    Value: "\u0426\u0435\u043D\u0430: {0} [0:\u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B|\u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u0430|\u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u043E\u0432|\u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u043E\u0432]"
+  - Key: case
+    Group: Default
+    Comment: 
+    Value: "\u041F\u0430\u0434\u0435\u0436\u0438"
+  - Key: anna0
+    Group: Case
+    Comment: 
+    Value: "\u0410\u043D\u043D\u0430"
+  - Key: anna1
+    Group: Case
+    Comment: 
+    Value: "\u0410\u043D\u043D\u044B"
+  - Key: anna2
+    Group: Case
+    Comment: 
+    Value: "\u0410\u043D\u043D\u0435"
+  - Key: anna3
+    Group: Case
+    Comment: 
+    Value: "\u0410\u043D\u043D\u0443"
+  - Key: anna4
+    Group: Case
+    Comment: 
+    Value: "\u0410\u043D\u043D\u043E\u0439"
+  - Key: anna5
+    Group: Case
+    Comment: 
+    Value: "\u0410\u043D\u043D\u0435"
+  - Key: anna6
+    Group: Case
+    Comment: 
+    Value: 
+  - Key: text0
+    Group: Case
+    Comment: 
+    Value: "{0} \u043F\u0440\u0438\u0448\u043B\u0430 \u0434\u043E\u043C\u043E\u0439"
+  - Key: text1
+    Group: Case
+    Comment: 
+    Value: "\u0423 {0:1} \u043D\u043E\u0432\u0430\u044F \u043C\u0430\u0448\u0438\u043D\u0430"
+  - Key: text2
+    Group: Case
+    Comment: 
+    Value: "\u042F \u0437\u0432\u043E\u043D\u0438\u043B {0:2} \u0432\u0447\u0435\u0440\u0430"
+  - Key: text3
+    Group: Case
+    Comment: 
+    Value: "\u042F \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u043B {0:3} \u0432
+      \u043F\u0430\u0440\u043A\u0435"
+  - Key: text4
+    Group: Case
+    Comment: 
+    Value: "\u042F \u0433\u043E\u0440\u0436\u0443\u0441\u044C {0:4}"
+  - Key: text5
+    Group: Case
+    Comment: 
+    Value: "\u041C\u044B \u0433\u043E\u0432\u043E\u0440\u0438\u043B\u0438 \u043E
+      {0:5}"
+  - Key: text6
+    Group: Case
+    Comment: 
+    Value: "\u041F\u0440\u0438\u0432\u0435\u0442, {0}!"
+  - Key: milica0
+    Group: Case
+    Comment: 
+    Value: "\u041C\u0438\u043B\u0438\u0446\u0430"
+  - Key: milica1
+    Group: Case
+    Comment: 
+    Value: "\u041C\u0438\u043B\u0438\u0446\u044B"
+  - Key: milica2
+    Group: Case
+    Comment: 
+    Value: "\u041C\u0438\u043B\u0438\u0446\u0435"
+  - Key: milica3
+    Group: Case
+    Comment: 
+    Value: "\u041C\u0438\u043B\u0438\u0446\u0443"
+  - Key: milica4
+    Group: Case
+    Comment: 
+    Value: "\u041C\u0438\u043B\u0438\u0446\u0435\u0439"
+  - Key: milica5
+    Group: Case
+    Comment: 
+    Value: "\u041C\u0438\u043B\u0438\u0446\u0435"
+  - Key: milica6
+    Group: Case
+    Comment: 
+    Value: 

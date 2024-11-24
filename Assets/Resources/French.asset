@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c094557abf5441589c8bce323ba8a2a2, type: 3}
-  m_Name: Serbian
+  m_Name: French
   m_EditorClassIdentifier: 
-  Language: 31
+  Language: 14
   Pluralizme: 1
-  ValueColumn: 4
+  ValueColumn: 6
   Items:
   - Key: englishLng
     Group: Language

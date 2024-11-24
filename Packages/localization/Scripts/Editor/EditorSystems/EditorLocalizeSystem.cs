@@ -131,12 +131,14 @@ namespace Localization.Editor.EditorSystems
 							keyGroup = itemGroup;
 					}
 
+					var value = item[localeAsset.ValueColumn];
+					localeAsset.Pluralizme |= HasPluralizme(value);
 					localeAsset.Items.Add(new LocaleAsset.LocaleItem
 					{
 						Key = item[settings.KeyColumn],
 						Group = keyGroup,
 						Comment = item[settings.CommentColumn],
-						Value = item[localeAsset.ValueColumn]
+						Value = value
 					});
 				}
 			}
@@ -144,6 +146,11 @@ namespace Localization.Editor.EditorSystems
 			{
 				Debug.LogWarning("Empty data.");
 			}
+		}
+
+		private static bool HasPluralizme(string value)
+		{
+			return LocalizeSystem.ParamsRegExpFirst.IsMatch(value) || LocalizeSystem.ParamsRegExpSecond.IsMatch(value); 
 		}
 	}
 }

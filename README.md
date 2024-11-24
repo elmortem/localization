@@ -38,6 +38,25 @@ var loclizationText = TextKey.Localize();
 var formattedText = TextKey.LocalizeFormat(arg0, arg1, arg2);
 ```
 
+## Pluralism
+
+The system supports pluralization for different languages. Use square brackets with index and forms:
+```
+"Price: {0} [0:crystal|crystals]" // English
+"Цена: {0} [0:кристалл|кристалла|кристаллов|кристаллов]" // Russian
+```
+
+## Cases
+Support for grammatical cases in languages that use them. Use colon syntax for case forms:
+```csharp
+// Basic usage with array of forms
+var forms = new[] { "Anna", "Anna's" }; // English needs only 2 forms
+var text = "hello".LocalizeFormat(forms); // Will use appropriate form for language
+```
+Languages that don't use cases (like English) will only use the basic form, while others (like Russian or Serbian) will use the forms they need.
+
+Check the extended **demo** for details.
+
 ## Text Mesh Pro
 Add component **LocalizeText** at the same level as TMP_Text to static localize text field.
 
