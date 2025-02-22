@@ -91,7 +91,7 @@ namespace Localization.Editor.PropertyDrawers
 
 			if (_localizeBoxStyle != null)
 			{
-				var availableWidth = EditorGUIUtility.currentViewWidth - 70f;
+				var availableWidth = EditorGUIUtility.currentViewWidth - 70f - 16f;
 				_localizeBoxSize = _localizeBoxStyle.CalcHeight(_localizeBoxContent, availableWidth) + 4f;
 				_localizeBoxSize = Mathf.Min(_localizeBoxSize, LocalizeBoxMaxSize);
 			}
