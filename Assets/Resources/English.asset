@@ -36,6 +36,10 @@ MonoBehaviour:
     Group: Default
     Comment: 
     Value: Localize Demo
+  - Key: description
+    Group: Default
+    Comment: 
+    Value: 
   - Key: red
     Group: Color
     Comment: 

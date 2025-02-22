@@ -12,13 +12,15 @@ namespace Localization.Editor.PropertyDrawers
 	public class LocalizeStringDrawer : PropertyDrawer
 	{
 		private const string NoValue = "No value...";
+		private const float LocalizeBoxMaxSize = 72f;
 		
 		private static SystemLanguage _language = SystemLanguage.Unknown;
 
 		private GUIStyle _btnKeyStyle;
 		private Texture _btnKeyIcon;
 		private GUIStyle _localizeBoxStyle;
-		private float _localizeBoxSize = 24f;
+		private float _localizeBoxSize;
+		private GUIContent _localizeBoxContent;
 
 		public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
 		{
@@ -57,18 +59,19 @@ namespace Localization.Editor.PropertyDrawers
 			}
 #endif
 
-			var languageRect = new Rect(position.x, position.y + propertyRect.height, 70f, _localizeBoxSize);
+			var languageRect = new Rect(position.x, position.y + propertyRect.height, 70f, 20f);
 			_language = (SystemLanguage)EditorGUI.EnumPopup(languageRect, new GUIContent(""), _language, HasLanguage);
 			
-			if (EditorLocalizeSystem.TryGetValue(_language, property.stringValue, out var value))
+			if (_localizeBoxStyle == null)
+				_localizeBoxStyle = GUI.skin.GetStyle("helpbox");
+
+			var availableWidth = position.width - 70f;
+
+			if (_localizeBoxContent != null)
 			{
-				var valuePosition = new Rect(position.x + 70f, position.y + propertyRect.height, position.width - 70f, _localizeBoxSize);
-				EditorGUI.HelpBox(valuePosition, value, MessageType.Info);
-			}
-			else
-			{
-				var valuePosition = new Rect(position.x + 70f, position.y + propertyRect.height, position.width - 70f, _localizeBoxSize);
-				EditorGUI.HelpBox(valuePosition, NoValue, MessageType.Info);
+				var valuePosition = new Rect(position.x + 70f, position.y + propertyRect.height, availableWidth,
+					_localizeBoxSize);
+				EditorGUI.HelpBox(valuePosition, _localizeBoxContent.text, MessageType.None);
 			}
 		}
 
@@ -81,11 +84,16 @@ namespace Localization.Editor.PropertyDrawers
 			{
 				value = NoValue;
 			}
+			
+			if(_localizeBoxContent == null)
+				_localizeBoxContent = new GUIContent();
+			_localizeBoxContent.text = value;
 
 			if (_localizeBoxStyle != null)
 			{
-				var size = _localizeBoxStyle.CalcSize(new GUIContent(value));
-				_localizeBoxSize = size.y + 4f;
+				var availableWidth = EditorGUIUtility.currentViewWidth - 70f;
+				_localizeBoxSize = _localizeBoxStyle.CalcHeight(_localizeBoxContent, availableWidth) + 4f;
+				_localizeBoxSize = Mathf.Min(_localizeBoxSize, LocalizeBoxMaxSize);
 			}
 			else
 			{

@@ -19,129 +19,132 @@ MonoBehaviour:
   - Key: englishLng
     Group: Language
     Comment: 
-    Value: "\u0415\u043D\u0433\u043B\u0435\u0441\u043A\u0438"
+    Value: Anglais
   - Key: serbianLng
     Group: Language
     Comment: 
-    Value: "\u0421\u0440\u043F\u0441\u043A\u0438"
+    Value: Serbe
   - Key: russianLng
     Group: Language
     Comment: 
-    Value: "\u0420\u0443\u0441\u043A\u0438"
+    Value: Russe
   - Key: frenchLng
     Group: Language
     Comment: 
-    Value: "\u0424\u0440\u0430\u043D\u0446\u0443\u0441\u043A\u0438"
+    Value: "Fran\xE7ais"
   - Key: title
     Group: Default
     Comment: 
-    Value: "\u041B\u043E\u0446\u0430\u043B\u0438\u0437\u0435 \u0414\u0435\u043C\u043E"
+    Value: "D\xE9mo de Localisation"
+  - Key: description
+    Group: Default
+    Comment: 
+    Value: 
   - Key: red
     Group: Color
     Comment: 
-    Value: "<color=red>\u0426\u0440\u0432\u0435\u043D\u0438</color>"
+    Value: <color=red>Rouge</color>
   - Key: green
     Group: Color
     Comment: 
-    Value: "<color=green>\u0417\u0435\u043B\u0435\u043D</color>"
+    Value: <color=green>Vert</color>
   - Key: blue
     Group: Color
     Comment: 
-    Value: "<color=blue>\u041F\u043B\u0430\u0432\u0438</color>"
+    Value: <color=blue>Bleu</color>
   - Key: pluralism
     Group: Default
     Comment: 
-    Value: "\u041F\u043B\u0443\u0440\u0430\u043B\u0438\u0437\u0430\u043C"
+    Value: Pluralisme
   - Key: price
     Group: Pluralizm
     Comment: 
-    Value: "\u0426\u0435\u043D\u0430: {0} [0:\u043A\u0440\u0438\u0441\u0442\u0430\u043B|\u043A\u0440\u0438\u0441\u0442\u0430\u043B\u0430]"
+    Value: 'Prix: {0} [0:cristal|cristaux]'
   - Key: case
     Group: Default
     Comment: 
-    Value: "\u0441\u043B\u0443\u0447\u0430\u0458\u0435\u0432\u0438\u043C\u0430"
+    Value: Cas
   - Key: anna0
     Group: Case
     Comment: 
-    Value: "\u0410\u043D\u0430"
+    Value: Anna
   - Key: anna1
     Group: Case
     Comment: 
-    Value: "\u0410\u043D\u0435"
+    Value: 
   - Key: anna2
     Group: Case
     Comment: 
-    Value: "\u0410\u043D\u0438"
+    Value: 
   - Key: anna3
     Group: Case
     Comment: 
-    Value: "\u0410\u043D\u0443"
+    Value: 
   - Key: anna4
     Group: Case
     Comment: 
-    Value: "\u0410\u043D\u043E\u043C"
+    Value: 
   - Key: anna5
     Group: Case
     Comment: 
-    Value: "\u0410\u043D\u0438"
+    Value: 
   - Key: anna6
     Group: Case
     Comment: 
-    Value: "\u0410\u043D\u0430"
+    Value: 
   - Key: text0
     Group: Case
     Comment: 
-    Value: "{0} \u0458\u0435 \u0434\u043E\u0448\u043B\u0430 \u043A\u0443\u045B\u0438"
+    Value: "{0} est rentr\xE9e \xE0 la maison"
   - Key: text1
     Group: Case
     Comment: 
-    Value: "{0:1} \u0438\u043C\u0430 \u043D\u043E\u0432\u0438 \u0430\u0443\u0442\u043E"
+    Value: La voiture de {0} est nouvelle
   - Key: text2
     Group: Case
     Comment: 
-    Value: "\u0417\u0432\u0430\u043E \u0441\u0430\u043C {0:2} \u0458\u0443\u0447\u0435"
+    Value: "J'ai appel\xE9 {0} hier"
   - Key: text3
     Group: Case
     Comment: 
-    Value: "\u0421\u0440\u0435\u043E \u0441\u0430\u043C {0:3} \u0443 \u043F\u0430\u0440\u043A\u0443"
+    Value: "J'ai rencontr\xE9 {0} dans le parc"
   - Key: text4
     Group: Case
     Comment: 
-    Value: "\u041F\u043E\u043D\u043E\u0441\u0438\u043C \u0441\u0435 {0:4}"
+    Value: Je suis fier de {0}
   - Key: text5
     Group: Case
     Comment: 
-    Value: "\u041F\u0440\u0438\u0447\u0430\u043B\u0438 \u0441\u043C\u043E \u043E
-      {0:5}"
+    Value: "Nous avons parl\xE9 de {0}"
   - Key: text6
     Group: Case
     Comment: 
-    Value: "\u0417\u0434\u0440\u0430\u0432\u043E, {0:6}!"
+    Value: Bonjour, {0} !
   - Key: milica0
     Group: Case
     Comment: 
-    Value: "\u041C\u0438\u043B\u0438\u0446\u0430"
+    Value: Militsa
   - Key: milica1
     Group: Case
     Comment: 
-    Value: "\u041C\u0438\u043B\u0438\u0446\u0435"
+    Value: 
   - Key: milica2
     Group: Case
     Comment: 
-    Value: "\u041C\u0438\u043B\u0438\u0446\u0438"
+    Value: 
   - Key: milica3
     Group: Case
     Comment: 
-    Value: "\u041C\u0438\u043B\u0438\u0446\u0443"
+    Value: 
   - Key: milica4
     Group: Case
     Comment: 
-    Value: "\u041C\u0438\u043B\u0438\u0446\u043E\u043C"
+    Value: 
   - Key: milica5
     Group: Case
     Comment: 
-    Value: "\u041C\u0438\u043B\u0438\u0446\u0438"
+    Value: 
   - Key: milica6
     Group: Case
     Comment: 
-    Value: "\u041C\u0438\u043B\u0438\u0446\u0435"
+    Value: 
